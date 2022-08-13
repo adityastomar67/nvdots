@@ -4,8 +4,20 @@
 </div>
 
 # Screenshots
-## Dashboard using alpha.nvim
+### Dashboard using alpha.nvim
 <img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS01.png"></img>
+
+### Code Conceal
+<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS02.png"></img>
+
+### When code conceal is off
+<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS03.png"></img>
+
+### LimeLight for Better focusing
+<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS04.png"></img>
+
+### File Browsing with nvim-tree and Telescope file_browser extension
+<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS05.png"></img>
 
 #### Before we proceed, File Structure is like
 
