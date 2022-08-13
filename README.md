@@ -50,25 +50,9 @@ nvim
 │       ├── toggleterm.lua
 │       ├── treesitter.lua
 │       └── utils.lua
-├── plugin
-│   └── packer_compiled.lua
 └── snippets
 ```
 
-# Installation
-
-```bash
-  # move to home dir
-  cd ~
-  # back up current config
-  cp -r ~/.config/nvim ~/.config/nvim.backup
-  # clone repository
-  git clone https://github.com/adityastomar67/.dotfiles.git
-  # copy nvim configurations from repository to your config directory
-  cp -r ~/.dotfiles/nvim ~/.config/
-  # cleanup
-  rm -rf ~/.dotfiles
-```
 
 ## Install language servers
 
@@ -129,15 +113,20 @@ _brew, apt_ etc.
 sudo pip install yamlfmt
 ```
 
-## Launch Nvim
+# Installation
 
-On the first run of nvim be sure to install plugins.
-
-`nvim +PackerInstall`
-
-Then compile loader file.
-
-`nvim +PackerCompile`
+```bash
+  # move to home dir
+  cd ~
+  # back up current config
+  cp -r ~/.config/nvim ~/.config/nvim.backup
+  # clone repository
+  git clone https://github.com/adityastomar67/nvim-dots.git ~/.config
+  # Launch nvim for the first time with this command to install plugins
+  nvim +PackerInstall
+  # exit nvim and Then compile the loader file
+  nvim +PackerCompile
+```
 
 ### Additionals
 ## Note: Installing Firenvim
