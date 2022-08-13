@@ -42,20 +42,23 @@ nvim
 │       ├── ruby.vim
 │       ├── rust.vim
 │       └── xml.vim
+├── bin
 ├── init.lua
-├── install.sh
 ├── lua
 │   └── core
+│       ├── alpha.lua
 │       ├── cmds.lua
 │       ├── cmp.lua
 │       ├── colorscheme.lua
 │       ├── comment.lua
+│       ├── consts.lua
 │       ├── dressing.lua
 │       ├── files.lua
 │       ├── gitsigns.lua
 │       ├── keymaps.lua
 │       ├── lspInstaller.lua
 │       ├── lsp.lua
+│       ├── lsp-saga.lua
 │       ├── null-ls.lua
 │       ├── nvim-tree.lua
 │       ├── options.lua
@@ -63,6 +66,7 @@ nvim
 │       ├── shared
 │       │   └── ascii_art.lua
 │       ├── telescope.lua
+│       ├── todo.lua
 │       ├── toggleterm.lua
 │       ├── treesitter.lua
 │       └── utils.lua
