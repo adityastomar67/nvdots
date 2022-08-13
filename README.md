@@ -3,6 +3,10 @@
   Brief description of how this sub configuration actually works.
 </div>
 
+# Screenshots
+## Dashboard using alpha.nvim
+<img src="https://github.com/adityastomar67/nvim-dots/tree/main/bin/img"></img>
+
 #### Before we proceed, File Structure is like
 
 If the reader is well versed or, has a general experience with shell scripting, Lua language or, know what they are doing then they may skip this section. But it advised to take a good understanding of the file structure before making any changes.
