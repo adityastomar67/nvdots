@@ -5,7 +5,7 @@
 
 # Screenshots
 ## Dashboard using alpha.nvim
-<img src="https://github.com/adityastomar67/nvim-dots/tree/main/bin/img"></img>
+<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS01.png"></img>
 
 #### Before we proceed, File Structure is like
 
