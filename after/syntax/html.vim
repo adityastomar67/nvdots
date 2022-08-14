@@ -1,15 +1,3 @@
-" Vim syntax file
-" Language: HTML (version 5)
-" Maintainer: Rodrigo Machado <rcmachado@gmail.com>
-" URL: http://rm.blog.br/vim/syntax/html.vim
-" Last Change: Sun, 14 Aug 2022 09:22
-" License: Public domain
-" (but let me know if you liked it :) )
-"
-" Note: This file just adds the new tags from HTML 5
-" and don't replace default html.vim syntax file
-"
-" Taken from: https://gist.github.com/390929
 autocmd FileType html :setlocal sw=2 ts=2 sts=2
 
 " HTML 5 tags

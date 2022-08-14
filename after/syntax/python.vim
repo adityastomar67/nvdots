@@ -43,5 +43,3 @@ hi link pyFancySpecial Keyword
 hi link pyFancyBuiltin Builtin
 
 hi! link Conceal Operator
-
-setlocal conceallevel=1
