@@ -158,7 +158,7 @@ function nvim_create_augroups(definitions)
 end
 
 vim.api.nvim_create_autocmd({"VimEnter"}, {pattern = "*", command = "Limelight"})
-vim.cmd([[autocmd InsertEnter * norm zz]]) -- Vertically center document when entering insert mode
+-- vim.cmd([[autocmd InsertEnter * norm zz]]) -- Vertically center document when entering insert mode
 vim.cmd([[command! Realtime set autoread | au CursorHold * checktime | call feedkeys("lh")]]) -- Automatic update of any Buffer when not in use
 vim.cmd([[command! Cls lua require("core.utils").preserve('%s/\\s\\+$//ge')]])
 vim.cmd([[command! Reindent lua require('core.utils').preserve("sil keepj normal! gg=G")]])
@@ -318,9 +318,8 @@ local autocmds = {
         { "Bufenter", "*config,*conf,sxhkdrc,bspwmrc", "set syntax=config" },
     },
     reload_sxhkd_bindings = {
-        -- {'BufWritePost', '*sxhkdrc', '!pkill -USR1 sxhkd && setsid sxhkd &'},
-        { "BufWritePost", "*sxhkdrc", "!pkill -USR1 -x sxhkd" },
-        -- {'BufWritePost', '*bspwmrc', '!bspc wm -r; dunstify "bspwm restarted!"'},
+        { "BufWritePost", "*sxhkdrc", "silent! !pkill -USR1 -x sxhkd" },
+        { 'BufWritePost', '*bspwmrc', [[silent! !bspc wm -r]] },
     },
     make_scripts_executable = {
         { "BufWritePost", "*.sh,*.py,*.zsh", [[silent !chmod +x %]] },
