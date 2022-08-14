@@ -108,7 +108,8 @@ npm i -g prettier
 [ shfmt ](https://github.com/mvdan/sh) is in the AUR
 
 ```bash
-sudo pacman -S shfmt
+sudo pacman -S shfmt                        # From the AUR
+go install mvdan.cc/sh/v3/cmd/shfmt@latest  # With the help of GO
 ```
 
 [ stylua ](https://github.com/JohnnyMorganz/StyLua) is in the AUR
