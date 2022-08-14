@@ -20,6 +20,7 @@ end
 
 --   פּ ﯟ   some other good icons
 local kind_icons = {
+    Copilot       = "",
     Text          = "",
     Method        = "",
     Function      = "",
