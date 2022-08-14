@@ -38,7 +38,6 @@ return packer.startup(function(use)
     use("wfxr/minimap.vim")                                                         -- For VSCode like Minimap
     use("junegunn/limelight.vim")                                                   -- Better focus when other code is dimmed out
     use("stevearc/dressing.nvim")                                                   -- For the sweet sweet UI Components
-    -- use "lunarvim/colorschemes"                                                    -- A bunch of colorschemes you can try out
     use("rebelot/kanagawa.nvim")                                                    -- Colorscheme of choice
     use("nvim-lua/popup.nvim")                                                      -- An implementation of the Popup API from vim in Neovim
     use("nvim-lua/plenary.nvim")                                                    -- Useful lua functions used ny lots of plugins
@@ -76,6 +75,8 @@ return packer.startup(function(use)
     use({"zbirenbaum/copilot-cmp", after = {"copilot.lua", "nvim-cmp"}})            -- For Getting Copilot Suggestions in Completion Engine
     use({"goolord/alpha-nvim", requires = "kyazdani42/nvim-web-devicons"})          -- For The Dahboard
     use({"folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim"})           -- Todo Comments
+    use({'RishabhRD/nvim-cheat.sh'})                                                -- For cheatsheets rignt in neovim
+    use({'RishabhRD/popfix'})
     -- use("tjdevries/colorbuddy.nvim")
 
     -- For the awesome Hoping Word Features

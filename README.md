@@ -19,6 +19,9 @@
 ### File Browsing with nvim-tree and Telescope file_browser extension
 <img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS05.png"></img>
 
+### Git usng Lazygit right inside Neovim
+<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS06.png"></img>
+
 #### Before we proceed, File Structure is like
 
 If the reader is well versed or, has a general experience with shell scripting, Lua language or, know what they are doing then they may skip this section. But it advised to take a good understanding of the file structure before making any changes.
