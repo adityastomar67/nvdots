@@ -1,3 +1,6 @@
+local impatient_ok, impatient = pcall(require, "impatient")
+if impatient_ok then impatient.enable_profile() end
+
 for _, source in ipairs({
 	-- CORE
 	"core.plugins",

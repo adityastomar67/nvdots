@@ -35,6 +35,7 @@ packer.init({
 -- Install your plugins here
 return packer.startup(function(use)
     use("wbthomason/packer.nvim")                                                   -- Have packer manage itself
+    use("lewis6991/impatient.nvim")
     use("wfxr/minimap.vim")                                                         -- For VSCode like Minimap
     use("junegunn/limelight.vim")                                                   -- Better focus when other code is dimmed out
     use("stevearc/dressing.nvim")                                                   -- For the sweet sweet UI Components
