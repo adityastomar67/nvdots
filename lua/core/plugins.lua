@@ -67,6 +67,8 @@ return packer.startup(function(use)
     use("akinsho/toggleterm.nvim")                                                  -- toggleterm for terminal
     use("glepnir/lspsaga.nvim")                                                     -- LSP UIs
     use("kg8m/vim-simple-align")                                                    -- for allignment of text, look on internet for references
+    use('RishabhRD/nvim-cheat.sh')                                                  -- For cheatsheets rignt in neovim
+    use('RishabhRD/popfix')
     use("nvim-telescope/telescope-file-browser.nvim")
     use("anuvyklack/hydra.nvim")                                                    -- Vim Submodes using Hydra
     use("cometsong/CommentFrame.vim")                                               -- For Fancy CommentFrame
@@ -75,8 +77,6 @@ return packer.startup(function(use)
     use({"zbirenbaum/copilot-cmp", after = {"copilot.lua", "nvim-cmp"}})            -- For Getting Copilot Suggestions in Completion Engine
     use({"goolord/alpha-nvim", requires = "kyazdani42/nvim-web-devicons"})          -- For The Dahboard
     use({"folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim"})           -- Todo Comments
-    use({'RishabhRD/nvim-cheat.sh'})                                                -- For cheatsheets rignt in neovim
-    use({'RishabhRD/popfix'})
 
     -- For the awesome Hoping Word Features
     use {

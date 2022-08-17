@@ -23,7 +23,7 @@ local options = {
 			"--column",
 			"--smart-case",
 		},
-		prompt_prefix = "  ",
+		prompt_prefix = "  ",
 		selection_caret = "  ",
 		entry_prefix = "  ",
 		initial_mode = "insert",
@@ -137,6 +137,7 @@ vim.cmd([[highlight TelescopeSelectionCaret guifg=#749484 gui=bold]])
 
 -- For Borders
 vim.api.nvim_set_hl(0, "TelescopeBorder", {ctermbg=220})
+
 
 local M = {}
 M.search_dotfiles = function()
