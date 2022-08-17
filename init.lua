@@ -8,6 +8,7 @@ require "core.files"
 
 -- PLUGS
 require "core.alpha"
+require "core.toggler"
 require "core.todo"
 require "core.cmp"
 require "core.telescope"
