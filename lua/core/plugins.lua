@@ -77,7 +77,6 @@ return packer.startup(function(use)
     use({"folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim"})           -- Todo Comments
     use({'RishabhRD/nvim-cheat.sh'})                                                -- For cheatsheets rignt in neovim
     use({'RishabhRD/popfix'})
-    -- use("tjdevries/colorbuddy.nvim")
 
     -- For the awesome Hoping Word Features
     use {
@@ -87,16 +86,7 @@ return packer.startup(function(use)
         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
       end
     }
-    -- use {
-    --   "folke/which-key.nvim",
-    --   config = function()
-    --     require("which-key").setup {
-    --       -- your configuration comes here
-    --       -- or leave it empty to use the default settings
-    --       -- refer to the configuration section below
-    --     }
-    --   end
-    -- }
+
     -- For Auto-Pairing the Brackets
     use {
         "windwp/nvim-autopairs",
@@ -111,7 +101,7 @@ return packer.startup(function(use)
             vim.defer_fn(function() require("copilot").setup() end, 100)
         end
     })
-    -- use "github/copilot.vim"
+    -- use "github/copilot.vim" -- Its a dependency if you're setting up copilot for the first time
 
     -- For Hovering the information eg: Diagnostics
     use({

@@ -197,18 +197,11 @@ api.nvim_create_autocmd("TextYankPost", {
     group = yankGrp,
 })
 
--- go to last loc when opening a buffer
+-- Last loc when opening a buffer
 api.nvim_create_autocmd(
     "BufReadPost",
     { command = [[if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g`\"" | endif]] }
 )
-
--- windows to close with "q"
-api.nvim_create_autocmd(
-    "FileType",
-    { pattern = { "help", "startuptime", "qf", "lspinfo" }, command = [[nnoremap <buffer><silent> q :close<CR>]] }
-)
-api.nvim_create_autocmd("FileType", { pattern = "man", command = [[nnoremap <buffer><silent> q :quit<CR>]] })
 
 -- show cursor line only in active window
 -- local cursorGrp = api.nvim_create_augroup("CursorLine", { clear = true })
@@ -307,7 +300,7 @@ local autocmds = {
         { "BufEnter", "*", "syntax match singlequotes '\"' conceal" },
     },
     general_settings = {
-        { "Filetype", "qf,help,man,lspinfo", ":nnoremap <silent> <buffer> q :close<CR>" },
+        { "Filetype", "qf,help,man,lspinfo,startuptime", ":nnoremap <silent> <buffer> q :close<CR>" },
         { "Filetype", "qf", ":set nobuflisted" },
     },
     autoquickfix = {
@@ -318,7 +311,7 @@ local autocmds = {
         { "Bufenter", "*config,*rc,*conf", "set commentstring=#%s" },
         { "Bufenter", "*config,*conf,sxhkdrc,bspwmrc", "set syntax=config" },
     },
-    reload_sxhkd_bindings = {
+    reload_bindings = {
         { "BufWritePost", "*sxhkdrc", "silent! !pkill -USR1 -x sxhkd" },
         { 'BufWritePost', '*bspwmrc', [[silent! !bspc wm -r]] },
     },
@@ -342,9 +335,6 @@ local autocmds = {
     resize_windows_proportionally = {
         { "VimResized", "*", ":wincmd =" },
         { "Filetype", "help", ":wincmd =" },
-    },
-    packer = {
-        { "BufWritePost", "plugins.lua", "source <afile> | PackerSync" },
     },
     terminal_job = {
         { "TermOpen", "*", [[tnoremap <buffer> <Esc> <c-\><c-n>]] },
