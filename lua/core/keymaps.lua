@@ -6,11 +6,8 @@
 --   term_mode = "t"
 --   command_mode = "c"
 
-
 local opts = {noremap = true, silent = true}
 local term_opts = {silent = true}
-
--- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
 -- Remap space as leader key
@@ -196,4 +193,3 @@ vim.cmd([[inoreab Iname <c-r>=expand("%:p")<cr>]])
 vim.cmd([[inoreab fname <c-r>=expand("%:t")<cr>]])
 vim.cmd([[inoreab iname <c-r>=expand("%:t")<cr>]])
 vim.cmd([[inoreabbrev idate <C-R>=strftime("%b %d %Y %H:%M")<CR>]])
-

@@ -3,11 +3,12 @@ if not status_ok then
     return
 end
 
+vim.cmd("source $HOME/.abbreviations.vim")
+
 local M = {}
 
 local dropdown_theme = require('telescope.themes').get_dropdown({
   results_height = 20,
-  -- winblend = 20;
   width = 0.6,
   prompt_title = '',
   prompt_prefix = 'Files> ',
@@ -28,7 +29,6 @@ M.xdg_config = function()
         file_ignore_patterns = { "lua-language-server", "chromium" },
 		layout_config = { width = 0.7 },
         cwd = "~/.config",
-		-- width = 0.6,
 		layout_config = { height = 0.3 },
 		layout_config = { width = 0.5 },
 		results_height = 20,
@@ -40,7 +40,6 @@ M.xdg_config = function()
 			},
     })
 end
--- mapped to F8
 
 -- searches opened buffers
 M.buffers = function()
@@ -48,14 +47,12 @@ M.buffers = function()
         prompt_title = "BUFFERS",
 		sorting_strategy = "ascending",
         file_ignore_patterns = { "lua-language-server", "chromium" },
-        -- cwd = "~/.config",
 		previewer = false,
 		layout_config = { height = 0.3 },
 		layout_config = { width = 0.5 },
         hidden = true,
     })
 end
--- mapped to <leader>b
 
 M.nvim_files = function()
     require("telescope.builtin").find_files({
@@ -68,7 +65,6 @@ M.nvim_files = function()
         hidden = true,
     })
 end
--- mapped to <leader>n
 
 -- searches on ~/.dotfiles
 M.search_dotfiles = function()
@@ -84,7 +80,6 @@ M.search_dotfiles = function()
 		layout_config = { width = 0.5 },
     })
 end
--- mapped to Ctrl-p
 
 -- searches on ~/.dotfiles
 M.search_oldfiles = function()
@@ -99,7 +94,6 @@ M.search_oldfiles = function()
 		layout_config = { width = 0.5 },
     })
 end
--- mapped to Ctrl-Alt-o
 
 -- searches on ~/.dotfiles
 M.grep_dotfiles = function()
@@ -111,7 +105,6 @@ M.grep_dotfiles = function()
         hidden = true,
     })
 end
--- mapped to
 
 M.grep_wiki = function()
     local opts = {}
@@ -126,5 +119,3 @@ M.grep_wiki = function()
 end
 
 return M
-
-

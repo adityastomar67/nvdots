@@ -120,6 +120,7 @@ end
 function hide_virtual_diagnostics()
   vim.diagnostic.config({ virtual_lines = false })
 end
+alias("hide_virtual_diagnostics", "HVD")
 
 function toggle_style()
   if vim.g.tokyonight_style == "night" then
@@ -167,9 +168,9 @@ vim.cmd([[command! CloneBuffer new | 0put =getbufline('#',1,'$')]])
 vim.cmd([[command! Mappings drop ~/.config/nvim/lua/core/keymaps.lua]])
 vim.cmd([[command! Scratch new | setlocal bt=nofile bh=wipe nobl noswapfile nu]])
 vim.cmd([[command! Blockwise lua require('core.utils').blockwise_clipboard()]])
+vim.cmd([[command! ReloadConfig lua require("core.utils").ReloadConfig()]])
+vim.cmd([[command! Syntax sync minlines=64]]) -- faster syntax hl
 vim.cmd([[command! SaveAsRoot w !doas tee %]])
-vim.cmd([[command! ReloadConfig lua require("utils").ReloadConfig()]])
-vim.cmd([[syntax sync minlines=64]]) -- faster syntax hl
 vim.cmd([[cmap w!! w !doas tee % >/dev/null]]) -- save as root, in my case I use the command 'doas'
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[au BufNewFile,BufRead *.ejs set filetype=html]])
@@ -189,6 +190,14 @@ vim.api.nvim_create_autocmd("BufEnter", {
       end
     end
 })
+
+-- vim.api.nvim_create_augroup("highlighturl", { clear = true })
+-- cmd({ "VimEnter", "FileType", "BufEnter", "WinEnter" }, {
+--   desc = "URL Highlighting",
+--   group = "highlighturl",
+--   pattern = "*",
+--   callback = function() astronvim.set_url_match() end,
+-- })
 
 -- Highlight on yank
 local yankGrp = api.nvim_create_augroup("YankHighlight", { clear = true })
@@ -230,7 +239,7 @@ local function code_keymap()
         local bufnr = vim.api.nvim_get_current_buf()
         local ft = vim.api.nvim_buf_get_option(bufnr, "filetype")
         local fname = vim.fn.expand("%:p:t")
-        local keymap_c = {}
+        local keymap_c = {"<leader>"}
 
         if ft == "python" then
             keymap_c = {
@@ -286,7 +295,6 @@ end
 
 local autocmds = {
     reload_vimrc = {
-        -- {"BufWritePost",[[$VIM_PATH/{*.vim,*.yaml,vimrc} nested source $MYVIMRC | redraw]]};
         { "BufWritePre", "$MYVIMRC", "lua require('core.utils').ReloadConfig()" },
     },
     dsa = {
@@ -301,19 +309,19 @@ local autocmds = {
     },
     general_settings = {
         { "Filetype", "qf,help,man,lspinfo,startuptime", ":nnoremap <silent> <buffer> q :close<CR>" },
-        { "Filetype", "qf", ":set nobuflisted" },
+        { "Filetype", "qf"                             , ":set nobuflisted" }                        ,
     },
     autoquickfix = {
-        { "QuickFixCmdPost", "[^l]*", "cwindow" },
-        { "QuickFixCmdPost", "l*", "lwindow" },
+        { "QuickFixCmdPost" , "[^l]*" , "cwindow" } ,
+        { "QuickFixCmdPost" , "l*"    , "lwindow" } ,
     },
     fix_commentstring = {
-        { "Bufenter", "*config,*rc,*conf", "set commentstring=#%s" },
-        { "Bufenter", "*config,*conf,sxhkdrc,bspwmrc", "set syntax=config" },
+        { "Bufenter", "*config,*rc,*conf"            , "set commentstring=#%s" },
+        { "Bufenter", "*config,*conf,sxhkdrc,bspwmrc", "set syntax=config" }    ,
     },
     reload_bindings = {
-        { "BufWritePost", "*sxhkdrc", "silent! !pkill -USR1 -x sxhkd" },
-        { 'BufWritePost', '*bspwmrc', [[silent! !bspc wm -r]] },
+        { "BufWritePost" , "*sxhkdrc" , "silent! !pkill -USR1 -x sxhkd" } ,
+        { 'BufWritePost' , '*bspwmrc' , [[silent! !bspc wm -r]] }         ,
     },
     make_scripts_executable = {
         { "BufWritePost", "*.sh,*.py,*.zsh", [[silent !chmod +x %]] },
@@ -322,9 +330,9 @@ local autocmds = {
         { "BufWritePost", "index.html,*.css", [[silent! !~/.scripts/refresh]] },
     },
     custom_updates = {
-        { "BufWritePost", "~/.Xresources", "!xrdb -merge ~/.Xresources" },
-        { "BufWritePost", "~/.Xdefaults", "!xrdb -merge ~/.Xdefaults" },
-        { "BufWritePost", "fonts.conf", "!fc-cache" },
+        { "BufWritePost" , "~/.Xresources" , "!xrdb -merge ~/.Xresources" } ,
+        { "BufWritePost" , "~/.Xdefaults"  , "!xrdb -merge ~/.Xdefaults" }  ,
+        { "BufWritePost" , "fonts.conf"    , "!fc-cache" }                  ,
     },
     format_options = { -- :h fo-talbe (for help)
         { "BufWinEnter,BufRead,BufNewFile", "*", "setlocal formatoptions-=r formatoptions-=o" },
@@ -333,24 +341,24 @@ local autocmds = {
         { "BufWinLeave", "*", "lua require('core.utils').changeheader()" },
     },
     resize_windows_proportionally = {
-        { "VimResized", "*", ":wincmd =" },
-        { "Filetype", "help", ":wincmd =" },
+        { "VimResized" , "*"    , ":wincmd =" } ,
+        { "Filetype"   , "help" , ":wincmd =" } ,
     },
     terminal_job = {
-        { "TermOpen", "*", [[tnoremap <buffer> <Esc> <c-\><c-n>]] },
-        { "TermOpen", "*", [[tnoremap <buffer> <leader>x <c-\><c-n>:bd!<cr>]] },
-        { "TermOpen", "*", [[tnoremap <expr> <A-r> '<c-\><c-n>"'.nr2char(getchar()).'pi' ]] },
-        { "TermOpen", "*", "startinsert" },
-        { "TermOpen", "*", [[nnoremap <buffer> <C-c> i<C-c>]] },
-        { "TermOpen", "*", "setlocal listchars= nonumber norelativenumber" },
-        { "TermOpen", "*", [[lua vim.opt_local.buflisted = false]] },
+        { "TermOpen" , "*" , [[tnoremap <buffer> <Esc> <c-\><c-n>]] }                           ,
+        { "TermOpen" , "*" , [[tnoremap <buffer> <leader>x <c-\><c-n>:bd!<cr>]] }               ,
+        { "TermOpen" , "*" , [[tnoremap <expr> <A-r> '<c-\><c-n>"'.nr2char(getchar()).'pi' ]] } ,
+        { "TermOpen" , "*" , "startinsert" }                                                    ,
+        { "TermOpen" , "*" , [[nnoremap <buffer> <C-c> i<C-c>]] }                               ,
+        { "TermOpen" , "*" , "setlocal listchars= nonumber norelativenumber" }                  ,
+        { "TermOpen" , "*" , [[lua vim.opt_local.buflisted = false]] }                          ,
     },
     restore_cursor = {
         { "BufRead", "*", [[call setpos(".", getpos("'\""))]] },
     },
     save_shada = {
-        { "VimLeave", "*", "wshada!" },
-        { "CursorHold", "*", [[rshada|wshada]] },
+        { "VimLeave"   , "*" , "wshada!" }         ,
+        { "CursorHold" , "*" , [[rshada|wshada]] } ,
     },
     wins = {
         -- { "VimResized", "*", ":wincmd =" },
@@ -358,11 +366,11 @@ local autocmds = {
         { "BufEnter", "NvimTree", [[setlocal cursorline]] },
     },
     toggle_search_highlighting = {
-        { "InsertEnter,InsertLeave", "*", [[set cul!]] },
-        { "InsertEnter", "*", "setlocal nohlsearch" },
-        { "InsertEnter", "*", [[call clearmatches()]] },
-        { "InsertLeave", "*", [[highlight RedundantSpaces ctermbg=red guibg=red]] },
-        { "InsertLeave", "*", [[match RedundantSpaces /\s\+$/]] },
+        { "InsertEnter  , InsertLeave" , "*"          , [[set cul!]] }                                        ,
+        { "InsertEnter"                , "*"          , "setlocal nohlsearch" }                               ,
+        { "InsertEnter"                , "*"          , [[call clearmatches()]] }                             ,
+        { "InsertLeave"                , "*"          , [[highlight RedundantSpaces ctermbg=red guibg=red]] } ,
+        { "InsertLeave"                , "*"          , [[match RedundantSpaces /\s\+$/]] }                   ,
     },
     lua_highlight = {
         { "TextYankPost", "*", [[silent! lua vim.highlight.on_yank() {higroup="IncSearch", timeout=600}]] },
