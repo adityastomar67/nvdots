@@ -96,6 +96,9 @@ install_font
 pip3 install pynvim
 npm install neovim
 
+##### Insatlling friendly-snippets -- Custom Forked #####
+git clone https://github.com/adityastomar67/friendly-snippets.git "$HOME/.config/nvim/"
+
 echo "Dependencies installed"
 echo
 echo "Installation finished"

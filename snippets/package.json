@@ -1,7 +1,7 @@
 {
     "name": "snippets",
     "version": "1.0.0",
-    "description": "\"Snipmate snippets for code completion\"",
+    "description": "\"Snippets for Ease\"",
     "contributes": {
         "snippets": [
             {

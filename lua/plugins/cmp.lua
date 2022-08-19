@@ -10,8 +10,8 @@ end
 
 vim.opt.completeopt = "menuone,noselect"
 
-require("luasnip/loaders/from_vscode").lazy_load({ paths = {"~/.config/nvim/luasnip_snippets"}})
-require("luasnip/loaders/from_vscode").lazy_load({ paths = {"~/.config/nvim/friendly-snippets"}})
+require("luasnip/loaders/from_vscode").lazy_load({ paths   = {"~/.config/nvim/luasnip_snippets"}})
+require("luasnip/loaders/from_vscode").lazy_load({ paths   = {"~/.config/nvim/friendly-snippets"}})
 require("luasnip/loaders/from_snipmate").lazy_load({ paths = {"~/.config/nvim/snippets"}})
 
 local check_backspace = function()
@@ -99,8 +99,6 @@ cmp.setup({
     formatting = {
         fields = { "abbr", "kind", "menu" },
         format = function(_, vim_item)
-            -- Kind icons
-            -- vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
             vim_item.kind = string.format("%s %s", kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
             return vim_item
         end,
@@ -115,9 +113,9 @@ cmp.setup({
         { name = "neosnippet" } ,
     },
     confirm_opts = { behavior = cmp.ConfirmBehavior.Replace, select = false },
-    window = {
+    window       = {
         documentation = cmp.config.window.bordered(),
-        completion = cmp.config.window.bordered(),
+        completion    = cmp.config.window.bordered(),
     },
     experimental = { ghost_text = true, native_menu = false },
 })
