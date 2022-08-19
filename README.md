@@ -1,5 +1,5 @@
 <div align="center">
-  <h2>Module: NVIM.</h1>
+  <h2>NVIM-DOTS</h1>
   Brief description of how this sub configuration actually works.
 </div>
 
@@ -29,6 +29,10 @@ If the reader is well versed or, has a general experience with shell scripting, 
 ```
 nvim
 ├── after
+│   ├── indent
+│   │   ├── javascript.vim
+│   │   ├── jsx.vim
+│   │   └── ls.vim
 │   ├── queries
 │   │   ├── cpp
 │   │   │   └── highlights.scm
@@ -37,42 +41,54 @@ nvim
 │   │   └── python
 │   │       └── highlights.scm
 │   └── syntax
+│       ├── ejs.vim
 │       ├── go.vim
 │       ├── html.vim
+│       ├── jade.vim
 │       ├── javascript.vim
+│       ├── jsx.vim
+│       ├── less.vim
+│       ├── ls.vim
 │       ├── markdown.vim
+│       ├── mpc.vim
 │       ├── python.vim
 │       ├── ruby.vim
 │       ├── rust.vim
-│       └── xml.vim
+│       ├── stylus.vim
+│       ├── xml.vim
+│       └── yaml.vim
 ├── bin
+│   └── img
 ├── init.lua
 ├── lua
-│   └── core
+│   ├── core
+│   │   ├── cat.lua
+│   │   ├── cmds.lua
+│   │   ├── colorscheme.lua
+│   │   ├── comment.lua
+│   │   ├── consts.lua
+│   │   ├── dressing.lua
+│   │   ├── files.lua
+│   │   ├── keymaps.lua
+│   │   ├── options.lua
+│   │   ├── plugins.lua
+│   │   └── utils.lua
+│   └── plugins
 │       ├── alpha.lua
-│       ├── cmds.lua
 │       ├── cmp.lua
-│       ├── colorscheme.lua
-│       ├── comment.lua
-│       ├── consts.lua
-│       ├── dressing.lua
-│       ├── files.lua
 │       ├── gitsigns.lua
-│       ├── keymaps.lua
 │       ├── lspInstaller.lua
 │       ├── lsp.lua
 │       ├── lsp-saga.lua
 │       ├── null-ls.lua
 │       ├── nvim-tree.lua
-│       ├── options.lua
-│       ├── plugins.lua
 │       ├── shared
 │       │   └── ascii_art.lua
 │       ├── telescope.lua
 │       ├── todo.lua
+│       ├── toggler.lua
 │       ├── toggleterm.lua
-│       ├── treesitter.lua
-│       └── utils.lua
+│       └── treesitter.lua
 └── snippets
 ```
 
