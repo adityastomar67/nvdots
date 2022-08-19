@@ -11,19 +11,19 @@ for _, source in ipairs({
 	"core.files",
 
 	-- PLUGS
-	"core.alpha",
-	"core.toggler",
-	"core.todo",
-	"core.cmp",
-	"core.telescope",
-	"core.treesitter",
-	"core.nvim-tree",
-	"core.null-ls",
-	"core.gitsigns",
-	"core.toggleterm",
-	"core.lspInstaller",
-	"core.lsp",
-	"core.lsp-saga",
+	"plugins.alpha",
+	"plugins.toggler",
+	"plugins.todo",
+	"plugins.cmp",
+	"plugins.telescope",
+	"plugins.treesitter",
+	"plugins.nvim-tree",
+	"plugins.null-ls",
+	"plugins.gitsigns",
+	"plugins.toggleterm",
+	"plugins.lspInstaller",
+	"plugins.lsp",
+	"plugins.lsp-saga",
 }) do
 	local status_ok, fault = pcall(require, source)
 	if not status_ok then
