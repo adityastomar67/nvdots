@@ -11,6 +11,7 @@ end
 vim.opt.completeopt = "menuone,noselect"
 
 require("luasnip/loaders/from_vscode").lazy_load({ paths = {"~/.config/nvim/luasnip_snippets"}})
+require("luasnip/loaders/from_vscode").lazy_load({ paths = {"~/.config/nvim/friendly-snippets"}})
 require("luasnip/loaders/from_snipmate").lazy_load({ paths = {"~/.config/nvim/snippets"}})
 
 local check_backspace = function()
@@ -105,12 +106,12 @@ cmp.setup({
         end,
     },
     sources = {
+        { name = "luasnip"      , group_index = 2 } ,
         { name = "copilot"      , group_index = 2 } ,
-        { name = "cmp_tabnine"  , group_index = 2 } ,
         { name = "nvim_lsp"     , group_index = 2 } ,
+        { name = "cmp_tabnine"  , group_index = 2 } ,
         { name = "path"         , group_index = 2 } ,
         { name = "buffer"       , group_index = 2 } ,
-        { name = "luasnip"      , group_index = 2 } ,
         { name = "neosnippet" } ,
     },
     confirm_opts = { behavior = cmp.ConfirmBehavior.Replace, select = false },

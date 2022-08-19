@@ -62,7 +62,6 @@ nvim
 ├── init.lua
 ├── lua
 │   ├── core
-│   │   ├── cat.lua
 │   │   ├── cmds.lua
 │   │   ├── colorscheme.lua
 │   │   ├── comment.lua
