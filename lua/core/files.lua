@@ -3,7 +3,10 @@ if not status_ok then
     return
 end
 
-vim.cmd("source $HOME/.abbreviations.vim")
+local f=io.open("$HOME/.abbreviations.vim","r")
+if f~=nil then
+    vim.cmd("source $HOME/.abbreviations.vim")
+end
 
 local M = {}
 
