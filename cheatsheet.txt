@@ -1,6 +1,6 @@
 ## Learning @easily @forgotten
 Surround -> cs'" , ds" , ysiw], yss),  | visual mode -> S", repeat with .
-Toggle true/false 0/1 yes/no +/- </>   | <leader>a, :swap
+Toggle true/false 0/1 yes/no +/- </>   | <leader>i
 
 ## Hotkeys @dotfiles @telescope
 Telescope prompt                       | <leader>1
@@ -59,11 +59,12 @@ Go to type definition                  | 'gt
 Fuzzy menu (ctrl+p)                    | <leader>p
 Fuzzy search                           | <leader><leader>
 Search files                           | <leader>s
-Search grep                            | <leader> f
+Search grep                            | <leader>f
 Search history                         | <leader>S
 Search buffers                         | <leader>b
 Search commands                        | <leader>c
 Search git_branches                    | <leader>gb
+
 ## Buffer_Splits_Nav @buffer @splits
 Cycle last/current Buffers             | <bs>
 Cycle splits                           | <c-w> , <c-W>
