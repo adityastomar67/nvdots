@@ -15,6 +15,9 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Mapping for Cheat sheet search
+keymap("n", "<leader>?", "<cmd>Cheat<CR>", opts)
+
 -- Show/Unshow Relative line Numbers
 keymap("n", "<leader>z", ":set invrnu invnu<CR>", opts)
 
