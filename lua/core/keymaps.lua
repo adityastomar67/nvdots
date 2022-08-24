@@ -15,6 +15,10 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- File creation date
+keymap("n", "<F1>", "oThis file was created on <ESC>:r!date '+\%x'<CR><ESC>", opts)
+keymap("i", "<F1>", "This file was created on <ESC>:r!date '+\%x'<CR>", opts)
+
 -- Mapping for Cheat sheet search
 keymap("n", "<leader>?", "<cmd>Cheat<CR>", opts)
 
