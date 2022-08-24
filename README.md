@@ -168,17 +168,6 @@ sudo pip install yamlfmt
 ```
 
 ### Additionals
-## Note: Installing Firenvim
-
-Run this command in nvim to install FireNvim in your browser.
-
-```
-:call firenvim#install(0)
-```
-
-or install the [FireFox extension](https://addons.mozilla.org/en-GB/firefox/addon/firenvim/)
-or the [Chrome extension](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo?hl=en)
-
 ## Adding custom Snippets
 
 The conifg uses [ luasnip ](https://github.com/saadparwaiz1/cmp_luasnip) paired
@@ -280,3 +269,7 @@ Noting really, if you have (Neo)vim installed then you can just backup your prev
 
 * Font: Operator Mono
 * [dot_files](https://github.com/adityastomar67/.dotfiles/)
+
+## TODO
+-[ ] Better Documentation
+-[ ] New Screenshot 
