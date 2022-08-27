@@ -1,5 +1,5 @@
 ./plugin/packer_compiled.lua
-
 plugin
 lua/core/cat.lua
 friendly-snippets
+.gitignore
