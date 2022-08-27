@@ -271,5 +271,5 @@ Noting really, if you have (Neo)vim installed then you can just backup your prev
 * [dot_files](https://github.com/adityastomar67/.dotfiles/)
 
 ## TODO
--[ ] Better Documentation
--[ ] New Screenshot 
+- [ ] Better Documentation
+- [ ] New Screenshot 
