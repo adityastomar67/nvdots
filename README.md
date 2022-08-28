@@ -2,7 +2,7 @@
 
 <h1><a href="https://github.com/adityastomar67/nvim-dots">NVIM-DOTS</a></h1>
 
-<a href="https://github.com/adityastomar67/nvim-dots/blob/main/LICENSE">
+<a href="https://github.com/adityastomar67/nvim-dots/blob/main/LICENSE.md">
 <img alt="License" src="https://img.shields.io/github/license/adityastomar67/nvim-dots?style=flat&color=eee&label="> </a>
 
 <a href="https://github.com/adityastomar67/nvim-dots/graphs/contributors">
