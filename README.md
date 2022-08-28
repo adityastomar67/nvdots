@@ -220,7 +220,7 @@ Noting really, if you have (Neo)vim installed then you can just backup your prev
 * [dot_files](https://github.com/adityastomar67/.dotfiles/)
 * For complete Automated install, run this code snippet in your terminal (Coming soon...)
 ```bash
-curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/Fresh-Install.sh | sh --vim
+curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/Fresh-Install.sh | sh -s -- --vim
 ```
 ## TODO
 - [ ] Better Documentation
