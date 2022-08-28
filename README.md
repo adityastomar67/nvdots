@@ -221,7 +221,7 @@ Noting really, if you have (Neo)vim installed then you can just backup your prev
 * [Wallpaper](https://github.com/adityastomar67/Wallpapers)
 
 ## For Complete Automated install
-Run this code snippet in your terminal (Coming soon...)
+Run this code snippet in your terminal **(Coming soon...)**
 ```bash
 curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/Fresh-Install.sh | sh -s -- --vim
 ```
