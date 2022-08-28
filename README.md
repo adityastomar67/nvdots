@@ -216,8 +216,9 @@ Noting really, if you have (Neo)vim installed then you can just backup your prev
 
 **SUGGESTION**
 
-* Font: Operator Mono
+* Font: Operator Mono Lig (You can find fonts inside my dotfiles repo)
 * [dot_files](https://github.com/adityastomar67/.dotfiles/)
+* [Wallpaper](https://github.com/adityastomar67/Wallpapers)
 
 ## For Complete Automated install
 Run this code snippet in your terminal (Coming soon...)
