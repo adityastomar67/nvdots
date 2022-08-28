@@ -3,7 +3,7 @@
 <h1><a href="https://github.com/adityastomar67/nvim-dots">NVIM-DOTS</a></h1>
 
 <a href="https://github.com/adityastomar67/nvim-dots/blob/main/LICENSE">
-<img alt="License" src="https://img.shields.io/github/license/2kabhishek/nvim?style=flat&color=eee&label="> </a>
+<img alt="License" src="https://img.shields.io/github/license/adityastomar67/nvim-dots?style=flat&color=eee&label="> </a>
 
 <a href="https://github.com/adityastomar67/nvim-dots/graphs/contributors">
 <img alt="People" src="https://img.shields.io/github/contributors/adityastomar67/nvim-dots?style=flat&color=ffaaf2&label=People"> </a>
