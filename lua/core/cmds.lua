@@ -174,6 +174,7 @@ vim.cmd([[command! SaveAsRoot w !doas tee %]])
 vim.cmd([[cmap w!! w !doas tee % >/dev/null]]) -- save as root, in my case I use the command 'doas'
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[au BufNewFile,BufRead *.ejs set filetype=html]])
+vim.cmd([[autocmd BufEnter *\(.out\|NvimTree*\)\@<! echo expand('%:t')]])
 -- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]])
 -- vim.cmd("hi normal guibg=NONE ctermbg=NONE")
 -- vim.cmd([[command! -bar -nargs=1 Grep silent grep <q-args> | redraw! | cw]])
