@@ -13,6 +13,7 @@ vim.opt.completeopt = "menuone,noselect"
 require("luasnip/loaders/from_vscode").lazy_load({ paths   = {"~/.config/nvim/bin/luasnip_snippets"}})
 require("luasnip/loaders/from_vscode").lazy_load({ paths   = {"~/.config/nvim/bin/friendly-snippets"}})
 require("luasnip/loaders/from_snipmate").lazy_load({ paths = {"~/.config/nvim/bin/snippets"}})
+require("luasnip/loaders/from_lua").lazy_load({ paths      = {"~/.config/nvim/bin/luasnippets"}})
 
 local check_backspace = function()
     local col = vim.fn.col(".") - 1
