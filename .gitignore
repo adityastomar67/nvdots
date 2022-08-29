@@ -3,3 +3,5 @@ plugin
 lua/core/cat.lua
 friendly-snippets
 .gitignore
+
+bin/luasnippets
