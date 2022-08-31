@@ -3,11 +3,6 @@ if not status_ok then
     return
 end
 
-local f=io.open("$HOME/.abbreviations.vim","r")
-if f~=nil then
-    vim.cmd("source $HOME/.abbreviations.vim")
-end
-
 local M = {}
 
 local dropdown_theme = require('telescope.themes').get_dropdown({

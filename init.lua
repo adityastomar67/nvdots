@@ -9,6 +9,7 @@ for _, source in ipairs({
 	"core.keymaps",
 	"core.cmds",
 	"core.files",
+	"core.abbreviations",
 
 	-- PLUGS
 	"plugins.alpha",
