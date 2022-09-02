@@ -69,11 +69,12 @@ nvim
 │   │   └── python
 │   └── syntax
 ├── bin
-│   ├── cheatsheet.txt
-│   └── img
+│   ├── img
+│   └── snippets
 ├── init.lua
 ├── lua
 │   ├── core
+│   │   ├── abbreviations.lua
 │   │   ├── cmds.lua
 │   │   ├── colorscheme.lua
 │   │   ├── comment.lua
@@ -100,8 +101,7 @@ nvim
 │       ├── toggler.lua
 │       ├── toggleterm.lua
 │       └── treesitter.lua
-├── README.md
-└── snippets
+└── README.md
 ```
 
 ## Install language servers
@@ -227,5 +227,5 @@ curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/F
 ```
 ## TODO
 - [ ] Better Documentation
-- [ ] New Screenshot 
+- [ ] New Screenshot
 - [ ] Get LuaSnip working with dynamic changes enabled
