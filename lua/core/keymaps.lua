@@ -213,3 +213,8 @@ vim.cmd([[inoreab Iname <c-r>=expand("%:p")<cr>]])
 vim.cmd([[inoreab fname <c-r>=expand("%:t")<cr>]])
 vim.cmd([[inoreab iname <c-r>=expand("%:t")<cr>]])
 vim.cmd([[inoreabbrev idate <C-R>=strftime("%b %d %Y %H:%M")<CR>]])
+
+-- TESTING
+keymap("n","n", "nzzzv",opts)
+keymap("n","N", "Nzzzv",opts)
+keymap("n","G", "Gzz",opts)
