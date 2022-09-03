@@ -1,5 +1,7 @@
 local impatient_ok, impatient = pcall(require, "impatient")
-if impatient_ok then impatient.enable_profile() end
+if impatient_ok then
+	impatient.enable_profile()
+end
 
 for _, source in ipairs({
 	-- CORE
@@ -25,6 +27,7 @@ for _, source in ipairs({
 	"plugins.lspInstaller",
 	"plugins.lsp",
 	"plugins.lsp-saga",
+	"plugins.lua-snip",
 }) do
 	local status_ok, fault = pcall(require, source)
 	if not status_ok then
