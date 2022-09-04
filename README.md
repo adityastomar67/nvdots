@@ -227,5 +227,5 @@ curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/F
 ```
 ## TODO
 - [ ] Better Documentation
-- [ ] New Screenshot
+- [x] New Screenshot
 - [ ] Get LuaSnip working with dynamic changes enabled
