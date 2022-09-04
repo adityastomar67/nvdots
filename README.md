@@ -218,7 +218,7 @@ Noting really, if you have (Neo)vim installed then you can just backup your prev
 
 **SUGGESTION**
 
-* Font: Operator Mono Lig (You can find fonts inside my dotfiles repo)
+* Font: Cascursive - Courtesy of [@sainnhe](https://github.com/sainhhe) (You can find fonts inside my dotfiles repo)
 * [dot_files](https://github.com/adityastomar67/.dotfiles/)
 * [Wallpaper](https://github.com/adityastomar67/Wallpapers)
 
