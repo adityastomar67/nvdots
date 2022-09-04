@@ -27,7 +27,7 @@
 ## What is this
 
 Handcrafted `neovim` configs for the ultimate CLI dev experience, completely in `lua`
-
+For a best yet minimal config, go to [minimal.nvim](https://github com/singhhhx/minimal.nvim/)
 ## Screenshots
 ### Dashboard using alpha.nvim
 <img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS01.png"></img>
