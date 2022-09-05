@@ -19,6 +19,10 @@
 
 <a href="https://github.com/adityastomar67/nvim-dots/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/adityastomar67/nvim-dots?style=flat&color=e06c75&label="> </a>
+ 
+<!-- <p> -- Github Start Velocity Track
+<img src="https://stars.medv.io/adityastomar67/nvim-dots.svg", title="commits"/>
+</p> -->
 
 <h3>Personalized Development Environment ❤️👨‍💻</h3>
   Brief description of how this configuration actually works. Hit the ⭐ button if you found this useful.
