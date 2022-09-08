@@ -231,3 +231,4 @@ curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/F
 - [ ] Better Documentation
 - [x] New Screenshot
 - [ ] Get LuaSnip working with dynamic changes enabled
+- [ ] Change the keybinding of hopping from "f" to some other key
