@@ -4,6 +4,7 @@ local wo = vim.wo
 
 ---- :help options
 opt.backup         = false                     -- creates a backup file
+opt.icm            = 'split'                   -- To create a popup menu for selected search items
 opt.clipboard      = "unnamedplus"             -- allows neovim to access the system clipboard
 opt.completeopt    = { "menuone", "noselect" } -- mostly just for cmp
 opt.fileencoding   = "utf-8"                   -- the encoding written to a file
