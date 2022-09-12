@@ -233,3 +233,4 @@ curl -sL https://raw.githubusercontent.com/adityastomar67/Fresh-Install/master/F
 - [ ] Get LuaSnip working with dynamic changes enabled
 - [ ] Change the keybinding of hopping from "f" to some other key
 - [ ] Add hydra plugin
+- [ ] Changing name to nvdots. 
