@@ -37,8 +37,9 @@ keymap("n", "gV", "`[v`]", opts )
 keymap("n", "<F1>", 'oThis file was created on <C-R>=strftime("%b %d %Y %H:%M")<CR><ESC>', opts)
 keymap("i", "<F1>", 'oThis file was created on <C-R>=strftime("%b %d %Y %H:%M")<CR>', opts)
 
--- Mapping for Cheat sheet search
+-- Mapping for Cheat sheet and stackexchange assistance
 keymap("n", "<leader>?", "<cmd>Cheat<CR>", opts)
+keymap("n", "<leader>!", "<cmd>lua require('core.utils').so_input()<CR>", opts)
 
 -- Show/Unshow Relative line Numbers
 keymap("n", "<leader>z", ":set invrnu invnu<CR>", opts)

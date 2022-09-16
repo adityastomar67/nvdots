@@ -30,8 +30,9 @@ opt.numberwidth    = 1                         -- set number column width to 2 {
 opt.signcolumn     = "yes"                     -- always show the sign column, otherwise it would shift the text each time
 opt.wrap           = true                      -- display lines as one long line
 opt.scrolloff      = 8                         -- is one of my fav
-opt.writebackup    = false                     -- when file is edited by some program (or was written to file while editing with some program), it's not allowed to be edited
 opt.sidescrolloff  = 8                         -- how many lines to scroll when you scroll past the end of the screen
+opt.scrollback     = 100000                    -- max number of screen lines to keep in scrollback
+opt.writebackup    = false                     -- when file is edited by some program (or was written to file while editing with some program), it's not allowed to be edited
 opt.background     = "dark"                    -- set the background color
 opt.fillchars      = { eob = " " }             -- set the fill character for the end of the line
 opt.laststatus     = 0                         -- set the last status line to 0
