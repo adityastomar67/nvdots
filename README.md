@@ -238,3 +238,4 @@ curl -sL https://bit.ly/Fresh-Install | sh -s -- --vim
 - [ ] Change the keybinding of hopping from "f" to some other key
 - [ ] Add hydra plugin
 - [x] Changing name to nvdots.
+- [x] Add Mason.nvim
