@@ -1,27 +1,27 @@
 <div align = "center">
 
-<h1><a href="https://github.com/adityastomar67/nvim-dots">NVIM-DOTS</a></h1>
+<h1><a href="https://github.com/adityastomar67/nvdots">NVDOTS</a></h1>
 
-<a href="https://github.com/adityastomar67/nvim-dots/blob/main/LICENSE.md">
-<img alt="License" src="https://img.shields.io/github/license/adityastomar67/nvim-dots?style=flat&color=eee&label="> </a>
+<a href="https://github.com/adityastomar67/nvdots/blob/main/LICENSE.md">
+<img alt="License" src="https://img.shields.io/github/license/adityastomar67/nvdots?style=flat&color=eee&label="> </a>
 
-<a href="https://github.com/adityastomar67/nvim-dots/graphs/contributors">
-<img alt="People" src="https://img.shields.io/github/contributors/adityastomar67/nvim-dots?style=flat&color=ffaaf2&label=People"> </a>
+<a href="https://github.com/adityastomar67/nvdots/graphs/contributors">
+<img alt="People" src="https://img.shields.io/github/contributors/adityastomar67/nvdots?style=flat&color=ffaaf2&label=People"> </a>
 
-<a href="https://github.com/adityastomar67/nvim-dots/stargazers">
-<img alt="Stars" src="https://img.shields.io/github/stars/adityastomar67/nvim-dots?style=flat&color=98c379&label=Stars"></a>
+<a href="https://github.com/adityastomar67/nvdots/stargazers">
+<img alt="Stars" src="https://img.shields.io/github/stars/adityastomar67/nvdots?style=flat&color=98c379&label=Stars"></a>
 
-<a href="https://github.com/adityastomar67/nvim-dots/network/members">
-<img alt="Forks" src="https://img.shields.io/github/forks/adityastomar67/nvim-dots?style=flat&color=66a8e0&label=Forks"> </a>
+<a href="https://github.com/adityastomar67/nvdots/network/members">
+<img alt="Forks" src="https://img.shields.io/github/forks/adityastomar67/nvdots?style=flat&color=66a8e0&label=Forks"> </a>
 
-<a href="https://github.com/adityastomar67/nvim-dots/watchers">
-<img alt="Watches" src="https://img.shields.io/github/watchers/adityastomar67/nvim-dots?style=flat&color=f5d08b&label=Watches"> </a>
+<a href="https://github.com/adityastomar67/nvdots/watchers">
+<img alt="Watches" src="https://img.shields.io/github/watchers/adityastomar67/nvdots?style=flat&color=f5d08b&label=Watches"> </a>
 
-<a href="https://github.com/adityastomar67/nvim-dots/pulse">
-<img alt="Last Updated" src="https://img.shields.io/github/last-commit/adityastomar67/nvim-dots?style=flat&color=e06c75&label="> </a>
- 
+<a href="https://github.com/adityastomar67/nvdots/pulse">
+<img alt="Last Updated" src="https://img.shields.io/github/last-commit/adityastomar67/nvdots?style=flat&color=e06c75&label="> </a>
+
 <!-- <p> -- Github Start Velocity Track
-<img src="https://stars.medv.io/adityastomar67/nvim-dots.svg", title="commits"/>
+<img src="https://stars.medv.io/adityastomar67/nvdots.svg", title="commits"/>
 </p> -->
 
 <h3>Personalized Development Environment ❤️👨‍💻</h3>
@@ -36,22 +36,22 @@ For a best yet minimal config, go to [minimal.nvim](https://github.com/singhhhx/
 
 ## Screenshots
 ### Dashboard using alpha.nvim
-<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS01.png"></img>
+<img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS01.png"></img>
 
 ### Code Conceal
-<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS02.png"></img>
+<img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS02.png"></img>
 
 ### When code conceal is off
-<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS03.png"></img>
+<img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS03.png"></img>
 
 ### LimeLight for Better focusing
-<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS04.png"></img>
+<img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS04.png"></img>
 
 ### File Browsing with nvim-tree and Telescope file_browser extension
-<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS05.png"></img>
+<img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS05.png"></img>
 
 ### Git usng Lazygit right inside Neovim
-<img src="https://github.com/adityastomar67/nvim-dots/blob/main/bin/img/SS06.png"></img>
+<img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS06.png"></img>
 
 ## Prerequisites
 
@@ -176,7 +176,7 @@ sudo pip install yamlfmt
   # back up current config
   cp -r ~/.config/nvim ~/.config/nvim.backup
   # clone repository
-  git clone https://github.com/adityastomar67/nvim-dots.git ~/.config
+  git clone https://github.com/adityastomar67/nvdots.git ~/.config
   # Launch nvim for the first time with this command to install plugins
   nvim +PackerInstall
   # exit nvim and Then compile the loader file
@@ -237,4 +237,4 @@ curl -sL https://bit.ly/Fresh-Install | sh -s -- --vim
 - [ ] Get LuaSnip working with dynamic changes enabled
 - [ ] Change the keybinding of hopping from "f" to some other key
 - [ ] Add hydra plugin
-- [ ] Changing name to nvdots. 
+- [x] Changing name to nvdots.
