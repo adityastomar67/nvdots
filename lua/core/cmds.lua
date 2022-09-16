@@ -181,6 +181,11 @@ vim.cmd([[autocmd BufEnter *\(.out\|NvimTree*\)\@<! echo expand('%:t')]])
 -- vim.cmd([[hi ActiveWindow ctermbg=16 | hi InactiveWindow ctermbg=233]])
 -- vim.cmd([[set winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow]])
 
+vim.api.nvim_create_user_command(
+	"DiffOrig",
+	"vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis",
+	{ force = true }
+)
 -- Turn Syntax off for non-code files
 vim.api.nvim_create_autocmd("BufEnter", {
     group = syntax_group,
