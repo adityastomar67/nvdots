@@ -240,3 +240,4 @@ curl -sL https://bit.ly/Fresh-Install | sh -s -- --vim
 - [x] Changing name to nvdots.
 - [ ] Add Mason.nvim
 - [ ] Create a version release
+- [ ] New Ideas for v2
