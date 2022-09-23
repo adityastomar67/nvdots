@@ -102,7 +102,6 @@ keymap("n" , "<C-c>" , ":bw<CR>"     , opts)
 keymap("n" , "<C-s>" , ":w<CR>"      , opts)
 keymap("n" , "qo"    , ":on<CR>"     , opts)
 keymap("i" , "<C-s>" , "<ESC>:w<CR>" , opts)
-keymap("v" , "q"     , "<ESC>"       , opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -131,8 +130,8 @@ keymap("i" , "``" , "``<Left>" , opts)
 
 -- Press qq fast to enter Normal Mode
 keymap("i", "qq", "<ESC>", opts)
-keymap("v", "qq", "<ESC>", opts)
-keymap("x", "qq", "<ESC>", opts)
+keymap("v", "q", "<ESC>", opts)
+keymap("x", "q", "<ESC>", opts)
 
 -- Getting Rid Of Bad Habbits
 keymap("n" , "<Up>"    , "<Nop>" , opts)

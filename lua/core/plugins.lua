@@ -135,8 +135,8 @@ return packer.startup(function(use)
 
     -- More Colors
     use({
-    'norcalli/nvim-colorizer.lua',
-    config =function ()
+        'norcalli/nvim-colorizer.lua',
+        config =function ()
         require("colorizer").setup()
     end
     })
