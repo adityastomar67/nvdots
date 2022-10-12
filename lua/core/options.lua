@@ -128,3 +128,4 @@ for _, plugin in pairs(disabled_built_ins) do
 end
 
 vim.cmd([[let &statusline='%#Normal# ']])
+vim.cmd([[lua vim.o.ch = 0]]) -- Set Command Height to Zero
