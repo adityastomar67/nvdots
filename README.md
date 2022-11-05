@@ -20,8 +20,6 @@
 <a href="https://github.com/adityastomar67/nvdots/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/adityastomar67/nvdots?style=flat&color=e06c75&label="> </a>
 
-[![](https://img.shields.io/badge/Neovim-0.8+-blueviolet.svg?style=for-the-badge&logo=Neovim&color=302D41&logoColor=green)](https://github.com/neovim/neovim)
-
 <!-- <p> -- Github Start Velocity Track
 <img src="https://stars.medv.io/adityastomar67/nvdots.svg", title="commits"/>
 </p> -->
