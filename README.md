@@ -50,7 +50,7 @@ For a best yet minimal config, go to [minimal.nvim](https://github.com/singhhhx/
 ### File Browsing with nvim-tree and Telescope file_browser extension
 <img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS05.png"></img>
 
-### Git usng Lazygit right inside Neovim
+### Git using Lazygit right inside Neovim
 <img src="https://github.com/adityastomar67/nvdots/blob/main/bin/img/SS06.png"></img>
 
 ## Prerequisites
